@@ -3,53 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Me Page</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/DCLogo.png">
 </head>
 <body>
-    <nav>
-        <img src="pencil.png" alt="My logo" class="icon"
-        <ul>
-            <li><a href="#about"> About</a></li>
-            <li><a href="#projects"> Projects</a></li>
-            <li><a href="#Contact"> Contacts</a></li>
-        </ul>
-    </nav>
-    <header>
-        <img src="profilePic.JPG" alt="Profile Picture" class="profilePicture"
-        <div id="personalInfo">
-            <h1>Nathan, Justin</h1>
-            <h4>Computer Science BS</h4>
-            <h4></h4>
-            <a href="links/resume.pdf" download="button">Resume</a>
-        </div>
-    </header>
-    <section id="About">
-        <h2>About</h2>
-        <p>Here's some information about yourself....</p>
-    </section>
-    <section id="skills">
-        <h2>Skills</h2>
-        <div id="skillsIcons">
-            <img src=""
-        </div>
-    </section>
-    <section id="projects">
-        <h2>Projects></h2>
-        <img src="images/pro">
+    <canvas id="stars"></canvas>
+    <div class="wrapper"></div>
+        <h1>Welcome to my Info Page</h1>
+        <section id="About">
+            <h2>About</h2>
+            <p>My name is Nathan Justin and I am pursuing a BS Degree in Computer Science 
+                at the University of Central Florida.
+            </p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <p>Language Profieciencies: C/C++, Java, Javascript, Python, HTML, CSS, Haskell</p>
+            <p>Libraries Used: React, Raylib/Raylib GUI</p>
+        </section>
+        <section id="Projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>SkipListSet</h3>
+                <div class="project-content">
+                    <img src="images/skip-list.png" alt="Italian Trulli">
+                    <p class="description">A Skiplist that is implemented with
+                        <br>functions similar to the functions that
+                        <br>work for the Set, SortedSet, and
+                        <br>SetIterator classes; just for Skiplist
+                        <br>implementation.
+                        <br>
+                        <br>Created: July 21, 2023
+                    </p>
+                    <a href="https://google.com" target="_blank" class="button">Github</a>
+                </div>
+            </div>
+            <div class="project">
+                <h3>Space Havoc</h3>
+                <div class="project-content">
+                    <img src="images/SpaceHavocScreenie.png" class="spaceHavocImg" alt="Italian Trulli">
+                    <p class="description">A 3D shooter game based on old
+                        <br>school arcade games. Specifically
+                        <br>Space Invaders.
+                        <br>
+                        <br>
+                        <br>
+                        <br>Created: July 21, 2023
+                    </p>
+                    <a href="https://github.com/RyanTurner02/space-havoc" target="_blank" class="button">Github</a>
+                </div>
+            </div>
+        </section>
         <div>
-            <h3>Project Title</h3>
-            <p>Brief Description</p>
-            <a href="link" class="button"
+            <footer id="Contact">
+                <h2>Contacts</h2>
+                <div class="footerContacts">
+                    <div class="footerEmail">
+                        <h3>Email</h3>
+                        <p>nathanjustin03@gmail.com</p>
+                    </div>
+                    <div class="footerLinkedIn">
+                        <a href="https://www.linkedin.com/in/nathan-justin-a5270b280/" target="_blank" class="linkedInButton">LinkedIn</a>
+                    </div>
+                    <div class="footerPhone">
+                        <h3>Phone</h3>
+                        <p>407-970-3916</p>
+                    </div>
+                </div>
+            </footer>
         </div>
-    </section>
-
-<footer id="contact">
-    <h2>Contacts</h2>
-    <div id="contactButtons">
-        <a href="mailto:example.example.com"
-    </div>
-</footer>
-</body>
+    </body>
+</div>
+<script src="sketch.js"></script>
 </html>
